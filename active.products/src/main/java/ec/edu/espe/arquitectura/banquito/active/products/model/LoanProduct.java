@@ -2,6 +2,7 @@ package ec.edu.espe.arquitectura.banquito.active.products.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -18,7 +19,7 @@ public class LoanProduct {
     @Indexed(unique = true)
     private String uniqueId;
     private String interestType;
-    private String name;
+    private String nameProduct;
     private String description;
     private BigDecimal defaulLoanAmount;
     private BigDecimal minLoanAmount;
@@ -39,6 +40,8 @@ public class LoanProduct {
     private Date modified_at;
     private String modified_by;
     private Date valid_to;
+    @Version
+    private Long version;
 
 
 
