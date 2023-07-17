@@ -8,14 +8,10 @@ import org.springframework.data.mongodb.core.index.Indexed;
 @Data
 public class LoanRequirement {
 
-    @Id
-    private String id;
-    @Indexed(unique = true)
-    private String uniqueId;
+    private String loanRequirementId;
     private String nameRequirement;
     private String description;
     private String type;
-    private String documentation;
     @Version
     private Long version;
 

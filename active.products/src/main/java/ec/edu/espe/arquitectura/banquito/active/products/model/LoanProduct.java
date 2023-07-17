@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Document(collection = "loan_product")
@@ -19,6 +20,7 @@ public class LoanProduct {
     @Indexed(unique = true)
     private String uniqueId;
     private String interestType;
+    private String typeClient;
     private String nameProduct;
     private String description;
     private BigDecimal defaulLoanAmount;
@@ -34,7 +36,7 @@ public class LoanProduct {
     private BigDecimal defaultPenaltyRate;
     private BigDecimal minPenaltyRate;
     private BigDecimal maxPenaltyRate;
-
+    private List<LoanRequirement> loanRequirement;
     private Date created_at;
     private String created_by;
     private Date modified_at;
