@@ -1,6 +1,7 @@
 package ec.edu.espe.arquitectura.banquito.active.products.controller;
 
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductResponse;
+import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectResponse;
 import ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,6 +25,18 @@ public class LoanProductController {
     @GetMapping("productos")
     public ResponseEntity<List<LoanProductResponse>> listLoandProduct() {
         List<LoanProductResponse> loanProductResponses = service.loanProductList();
+        try
+        {
+            return ResponseEntity.ok(loanProductResponses);
+        }catch (Exception e){
+            log.info("Error {}", e);
+            return ResponseEntity.ok(loanProductResponses);
+        }
+    }
+
+        @GetMapping("selected")
+    public ResponseEntity<List<LoanProductSelectResponse>> listLoandProductSelected() {
+        List<LoanProductSelectResponse> loanProductResponses = service.loanProductSelectList();
         try
         {
             return ResponseEntity.ok(loanProductResponses);

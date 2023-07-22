@@ -2,6 +2,7 @@ package ec.edu.espe.arquitectura.banquito.active.products.service;
 
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductRequest;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductResponse;
+import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectResponse;
 import ec.edu.espe.arquitectura.banquito.active.products.converts.Converters;
 import ec.edu.espe.arquitectura.banquito.active.products.model.LoanProduct;
 import ec.edu.espe.arquitectura.banquito.active.products.repository.LoanProductRepository;
@@ -25,11 +26,16 @@ public class LoanProductService {
 
     public List<LoanProductResponse> loanProductList (){
         List<LoanProduct> loanProduct = loanProductRepository.findByValidIsTrue();
-        List<LoanProductResponse> loanProductResponses = converters.convertLoanProductToIndicadorDtoList(loanProduct);
+        List<LoanProductResponse> loanProductResponses = converters.convertLoanProductToDtoList(loanProduct);
         return loanProductResponses;
     }
 
 
+    public List<LoanProductSelectResponse> loanProductSelectList (){
+        List<LoanProduct> loanProduct = loanProductRepository.findByValidIsTrue();
+        List<LoanProductSelectResponse> loanProductSelectResponses = converters.convertLoanProductToDtoSelectList(loanProduct);
+        return loanProductSelectResponses;
+    }
 
 
 

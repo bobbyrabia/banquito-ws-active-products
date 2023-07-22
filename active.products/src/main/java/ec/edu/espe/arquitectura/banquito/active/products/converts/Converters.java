@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductRequest;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductResponse;
+import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectResponse;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanRequirementsDto;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.ProductArrearsSettingDto;
 import ec.edu.espe.arquitectura.banquito.active.products.model.LoanProduct;
@@ -67,11 +68,18 @@ public class Converters {
         return loanProduct;
     }
 
-        public List<LoanProductResponse> convertLoanProductToIndicadorDtoList(List<LoanProduct> loanProducts) {
+        public List<LoanProductResponse> convertLoanProductToDtoList(List<LoanProduct> loanProducts) {
         Type listType = new TypeToken<List<LoanProductResponse>>() {
         }.getType();
         List<LoanProductResponse> loanProductResponses = modelMapper.map(loanProducts, listType);
         return loanProductResponses;
+    }
+
+            public List<LoanProductSelectResponse> convertLoanProductToDtoSelectList(List<LoanProduct> loanProducts) {
+        Type listType = new TypeToken<List<LoanProductSelectResponse>>() {
+        }.getType();
+        List<LoanProductSelectResponse> loanProductSelectResponses = modelMapper.map(loanProducts, listType);
+        return loanProductSelectResponses;
     }
 
 }
