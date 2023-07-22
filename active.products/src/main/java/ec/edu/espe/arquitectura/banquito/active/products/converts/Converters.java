@@ -63,6 +63,11 @@ public class Converters {
         return loanProductResponse;
     }
 
+     public LoanProductSelectResponse convertLoanProductToDtoSelect(LoanProduct loanProduct) {
+        LoanProductSelectResponse loanProductSelectResponse = modelMapper.map(loanProduct, LoanProductSelectResponse.class);
+        return loanProductSelectResponse;
+    }
+
     public LoanProduct convertLoanProductToEntity(LoanProductRequest loanProductRequest) {
         LoanProduct loanProduct = modelMapper.map(loanProductRequest, LoanProduct.class);
         return loanProduct;

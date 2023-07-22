@@ -5,8 +5,10 @@ import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectRe
 import ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductService;
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -45,5 +47,25 @@ public class LoanProductController {
             return ResponseEntity.ok(loanProductResponses);
         }
     }
+
+        
+    @GetMapping("selected/{uniqueId}")
+    public ResponseEntity<LoanProductSelectResponse> findBySelected(@PathVariable String uniqueId) {
+        try {
+            return ResponseEntity.ok(service.FindByIDSelected(uniqueId));
+        } catch (DataIntegrityViolationException dataNotFoundException) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+        @GetMapping("productos/{uniqueId}")
+    public ResponseEntity<LoanProductResponse> findByProductos(@PathVariable String uniqueId) {
+        try {
+            return ResponseEntity.ok(service.FindByID(uniqueId));
+        } catch (DataIntegrityViolationException dataNotFoundException) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
 
 }

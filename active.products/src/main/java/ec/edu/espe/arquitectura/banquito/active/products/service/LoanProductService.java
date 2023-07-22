@@ -6,9 +6,12 @@ import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectRe
 import ec.edu.espe.arquitectura.banquito.active.products.converts.Converters;
 import ec.edu.espe.arquitectura.banquito.active.products.model.LoanProduct;
 import ec.edu.espe.arquitectura.banquito.active.products.repository.LoanProductRepository;
+
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class LoanProductService {
@@ -38,9 +41,32 @@ public class LoanProductService {
     }
 
 
+    public LoanProductSelectResponse FindByIDSelected(String uniqueId) {
+        Optional<LoanProduct> loan_productOpt = loanProductRepository.findByValidIsTrueAndUniqueId(uniqueId);
+        if (loan_productOpt.isPresent()) {
+
+            LoanProductSelectResponse loanProductSelectResponse = converters.convertLoanProductToDtoSelect(loan_productOpt.get());
+            return loanProductSelectResponse;
+        } else {
+            throw new DataIntegrityViolationException(
+                    "El no existe el producto con la clave unica:  " + uniqueId );
+
+        }
+    }
 
 
+    public LoanProductResponse FindByID(String uniqueId) {
+        Optional<LoanProduct> loan_productOpt = loanProductRepository.findByValidIsTrueAndUniqueId(uniqueId);
+        if (loan_productOpt.isPresent()) {
 
+            LoanProductResponse loanProductResponse = converters.convertLoanProductToDto(loan_productOpt.get());
+            return loanProductResponse;
+        } else {
+            throw new DataIntegrityViolationException(
+                    "El no existe el producto con la clave unica:  " + uniqueId );
+
+        }
+    }
 
 
 }
