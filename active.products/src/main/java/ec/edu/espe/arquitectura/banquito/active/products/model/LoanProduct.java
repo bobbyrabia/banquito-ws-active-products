@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @Document(collection = "loan_product")
@@ -37,6 +38,7 @@ public class LoanProduct {
     private BigDecimal minPenaltyRate;
     private BigDecimal maxPenaltyRate;
     private List<LoanRequirement> loanRequirement;
+    private ProductArrearsSetting productArrearsSetting;
     private Date created_at;
     private String created_by;
     private Date modified_at;
@@ -44,12 +46,6 @@ public class LoanProduct {
     private Date valid_to;
     @Version
     private Long version;
-
-
-
-
-
-
 
 
 }
