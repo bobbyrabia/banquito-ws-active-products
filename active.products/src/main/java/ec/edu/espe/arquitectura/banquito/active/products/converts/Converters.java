@@ -50,7 +50,7 @@ public class Converters {
         return loanRequirement;
     }
 
-    public List<LoanRequirementsDto> convertIndicadorEntityToIndicadorDtoList(List<LoanRequirement> loanRequirements) {
+    public List<LoanRequirementsDto> convertLoanRequirementsDtoList(List<LoanRequirement> loanRequirements) {
         Type listType = new TypeToken<List<LoanRequirementsDto>>() {
         }.getType();
         List<LoanRequirementsDto> loanRequirementsDtos = modelMapper.map(loanRequirements, listType);

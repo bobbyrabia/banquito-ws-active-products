@@ -32,7 +32,7 @@ public class LoanProductController {
             return ResponseEntity.ok(loanProductResponses);
         }catch (Exception e){
             log.info("Error {}", e);
-            return ResponseEntity.ok(loanProductResponses);
+            return ResponseEntity.notFound().build();
         }
     }
 
@@ -44,7 +44,7 @@ public class LoanProductController {
             return ResponseEntity.ok(loanProductResponses);
         }catch (Exception e){
             log.info("Error {}", e);
-            return ResponseEntity.ok(loanProductResponses);
+            return ResponseEntity.notFound().build();
         }
     }
 
