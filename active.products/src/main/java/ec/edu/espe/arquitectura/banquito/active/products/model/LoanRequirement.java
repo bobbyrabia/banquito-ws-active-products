@@ -8,11 +8,9 @@ import org.springframework.data.mongodb.core.index.Indexed;
 @Data
 public class LoanRequirement {
 
-    private String loanRequirementId;
     private String nameRequirement;
     private String description;
     private String type;
-    @Version
-    private Long version;
+
 
 }

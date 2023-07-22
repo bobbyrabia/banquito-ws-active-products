@@ -10,6 +10,5 @@ public class LoanRequirementRS {
     private String nameRequirement;
     private String description;
     private String type;
-    @Version
-    private Long version;
+
 }

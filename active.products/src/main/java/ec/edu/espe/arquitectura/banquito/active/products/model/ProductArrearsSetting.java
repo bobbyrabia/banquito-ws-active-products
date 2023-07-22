@@ -10,6 +10,4 @@ public class ProductArrearsSetting {
     private Integer minTolerancePeriod;
     private Integer maxTolerancePeriod;
     private Integer monthlyToleranceDay;
-
-
 }

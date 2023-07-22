@@ -12,7 +12,6 @@ import java.util.List;
 public class LoanProductRQ {
     private String nameProduct;
     private String description;
-    private String typeClient;
     private BigDecimal maxLoanAmount;
     private List<LoanRequirement> loanRequirement;
 }

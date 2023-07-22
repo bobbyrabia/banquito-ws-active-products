@@ -21,7 +21,6 @@ public class LoanProduct {
     @Indexed(unique = true)
     private String uniqueId;
     private String interestType;
-    private String typeClient;
     private String nameProduct;
     private String description;
     private BigDecimal defaulLoanAmount;
