@@ -1,4 +1,4 @@
-package ec.edu.espe.arquitectura.banquito.active.products.model;
+package ec.edu.espe.arquitectura.banquito.activeproducts.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

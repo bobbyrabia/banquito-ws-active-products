@@ -1,4 +1,4 @@
-package ec.edu.espe.arquitectura.banquito.active.products.dto;
+package ec.edu.espe.arquitectura.banquito.activeproducts.dto;
 
 import lombok.Builder;
 import lombok.Data;

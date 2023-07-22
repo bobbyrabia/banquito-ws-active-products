@@ -1,7 +1,7 @@
-package ec.edu.espe.arquitectura.banquito.active.products.service;
+package ec.edu.espe.arquitectura.banquito.activeproducts.service;
 
-import ec.edu.espe.arquitectura.banquito.active.products.model.LoanProduct;
-import ec.edu.espe.arquitectura.banquito.active.products.repository.LoanProductRepository;
+import ec.edu.espe.arquitectura.banquito.activeproducts.model.LoanProduct;
+import ec.edu.espe.arquitectura.banquito.activeproducts.repository.LoanProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

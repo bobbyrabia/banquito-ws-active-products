@@ -1,4 +1,4 @@
-package ec.edu.espe.arquitectura.banquito.active.products.config;
+package ec.edu.espe.arquitectura.banquito.activeproducts.config;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

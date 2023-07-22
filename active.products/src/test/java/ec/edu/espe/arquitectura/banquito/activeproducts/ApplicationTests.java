@@ -1,4 +1,4 @@
-package ec.edu.espe.arquitectura.banquito.active.products;
+package ec.edu.espe.arquitectura.banquito.activeproducts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

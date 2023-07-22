@@ -1,6 +1,6 @@
-package ec.edu.espe.arquitectura.banquito.active.products.dto;
+package ec.edu.espe.arquitectura.banquito.activeproducts.dto;
 
-import ec.edu.espe.arquitectura.banquito.active.products.model.LoanRequirement;
+import ec.edu.espe.arquitectura.banquito.activeproducts.model.LoanRequirement;
 import lombok.Builder;
 import lombok.Data;
 

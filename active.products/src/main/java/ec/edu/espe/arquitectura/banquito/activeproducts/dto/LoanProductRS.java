@@ -1,26 +1,25 @@
-package ec.edu.espe.arquitectura.banquito.active.products.model;
+package ec.edu.espe.arquitectura.banquito.activeproducts.dto;
 
+import ec.edu.espe.arquitectura.banquito.activeproducts.model.LoanRequirement;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 @Data
-@Document(collection = "loan_product")
-
-public class LoanProduct {
+@Builder
+public class LoanProductRS {
     @Id
     private String id;
     @Indexed(unique = true)
     private String uniqueId;
     private String interestType;
+    private String typeClient;
     private String nameProduct;
     private String description;
     private BigDecimal defaulLoanAmount;
@@ -37,7 +36,6 @@ public class LoanProduct {
     private BigDecimal minPenaltyRate;
     private BigDecimal maxPenaltyRate;
     private List<LoanRequirement> loanRequirement;
-    private ProductArrearsSetting productArrearsSetting;
     private Date created_at;
     private String created_by;
     private Date modified_at;
@@ -45,6 +43,4 @@ public class LoanProduct {
     private Date valid_to;
     @Version
     private Long version;
-
-
 }

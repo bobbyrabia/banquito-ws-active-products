@@ -1,7 +1,7 @@
-package ec.edu.espe.arquitectura.banquito.active.products.controller;
+package ec.edu.espe.arquitectura.banquito.activeproducts.controller;
 
-import ec.edu.espe.arquitectura.banquito.active.products.model.LoanProduct;
-import ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductService;
+import ec.edu.espe.arquitectura.banquito.activeproducts.model.LoanProduct;
+import ec.edu.espe.arquitectura.banquito.activeproducts.service.LoanProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

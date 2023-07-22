@@ -1,4 +1,4 @@
-package ec.edu.espe.arquitectura.banquito.active.products;
+package ec.edu.espe.arquitectura.banquito.activeproducts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
