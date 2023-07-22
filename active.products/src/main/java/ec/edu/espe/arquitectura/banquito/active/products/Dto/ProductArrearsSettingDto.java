@@ -1,14 +1,16 @@
-package ec.edu.espe.arquitectura.banquito.active.products.model;
+package ec.edu.espe.arquitectura.banquito.active.products.Dto;
 
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter 
+@Getter 
 @NoArgsConstructor
-@Data
-public class ProductArrearsSetting {
+public class ProductArrearsSettingDto {
     private Integer defaultTolerancePeriod;
     private Integer minTolerancePeriod;
     private Integer maxTolerancePeriod;
     private Integer monthlyToleranceDay;
     private Long version;
-
 }
