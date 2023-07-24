@@ -14,8 +14,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class LoanProductResponse {
     private String uniqueId;
-    private List<ProductArrearsSetting> productArrearsSettings;
-    private LoanRequirement loanRequirement;
+    private List<ProductArrearsSettingDto> productArrearsSettingDtos;
+    private LoanRequirementsDto loanRequirementsDto;
     private BigDecimal cappingPercentage;
     private String cappingMethod;
     private String interestType;
