@@ -1,16 +1,17 @@
-package ec.edu.espe.arquitectura.banquito.activeproducts.model;
+package ec.edu.espe.arquitectura.banquito.active.products.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
-import org.springframework.data.mongodb.core.index.Indexed;
+import lombok.NoArgsConstructor;
 
+import org.springframework.data.annotation.Version;
+@NoArgsConstructor
 @Data
 public class LoanRequirement {
-
-    private String nameRequirement;
+    private String name;
     private String description;
     private String type;
-
+    private String documentation;
+    @Version
+    private Long version;
 
 }
