@@ -24,7 +24,7 @@ public class LoanProductController {
         this.service = service;
     }
 
-    @GetMapping("productos")
+    @GetMapping("/productos")
     public ResponseEntity<List<LoanProductResponse>> listLoandProduct() {
         List<LoanProductResponse> loanProductResponses = service.loanProductList();
         try
@@ -36,7 +36,7 @@ public class LoanProductController {
         }
     }
 
-        @GetMapping("selected")
+        @GetMapping("/selected")
     public ResponseEntity<List<LoanProductSelectResponse>> listLoandProductSelected() {
         List<LoanProductSelectResponse> loanProductResponses = service.loanProductSelectList();
         try
@@ -49,7 +49,7 @@ public class LoanProductController {
     }
 
         
-    @GetMapping("selected/{uniqueId}")
+    @GetMapping("/selected/{uniqueId}")
     public ResponseEntity<LoanProductSelectResponse> findBySelected(@PathVariable String uniqueId) {
         try {
             return ResponseEntity.ok(service.FindByIDSelected(uniqueId));
@@ -58,7 +58,7 @@ public class LoanProductController {
         }
     }
 
-        @GetMapping("productos/{uniqueId}")
+        @GetMapping("/productos/{uniqueId}")
     public ResponseEntity<LoanProductResponse> findByProductos(@PathVariable String uniqueId) {
         try {
             return ResponseEntity.ok(service.FindByID(uniqueId));
