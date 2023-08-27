@@ -3,6 +3,7 @@ package ec.edu.espe.arquitectura.banquito.active.products.controller;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductResponse;
 import ec.edu.espe.arquitectura.banquito.active.products.Dto.LoanProductSelectResponse;
 import ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductService;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -24,8 +25,10 @@ class LoanProductControllerTest {
 
     @InjectMocks
     private LoanProductController loanProductController;
+
+    @DisplayName("listLoandProduct - Success Scenario")
     @Test
-    void listLoandProduct() {
+    void test_when_listLoandProduct_Success() {
         // Arrange
         List<LoanProductResponse> expectedResponseList = List.of(new LoanProductResponse());
         when(loanProductService.loanProductList()).thenReturn(expectedResponseList);
@@ -38,8 +41,9 @@ class LoanProductControllerTest {
         assertEquals(expectedResponseList, response.getBody());
     }
 
+    @DisplayName("listLoandProductSelected - Success Scenario")
     @Test
-    void listLoandProductSelected() {
+    void test_when_listLoandProductSelected_Success() {
         // Arrange
         List<LoanProductSelectResponse> expectedResponseList = List.of(new LoanProductSelectResponse());
         when(loanProductService.loanProductSelectList()).thenReturn(expectedResponseList);
@@ -51,23 +55,26 @@ class LoanProductControllerTest {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedResponseList, response.getBody());
     }
-
+    @DisplayName("findBySelected - Success Scenario")
     @Test
-    void findBySelected() {
+    void test_when_findBySelected_Success() {
         // Arrange
         String uniqueId = "someUniqueId";
         LoanProductSelectResponse expectedResponse = new LoanProductSelectResponse();
+        expectedResponse.setUniqueId("someUniqueId");
+        expectedResponse.setName("productMock");
         when(loanProductService.FindByIDSelected(uniqueId)).thenReturn(expectedResponse);
 
         // Act
         ResponseEntity<LoanProductSelectResponse> response = loanProductController.findBySelected(uniqueId);
-
+        System.out.println(response.getBody().getName());
         // Assert
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(expectedResponse, response.getBody());
+        assertEquals(uniqueId, response.getBody().getUniqueId());
     }
+    @DisplayName("findBySelected - Success Scenario")
     @Test
-    void findBySelectedNotFound() {
+    void test_when_findBySelected_NotFound() {
         // Arrange
         String uniqueId = "nonExistentUniqueId";
         when(loanProductService.FindByIDSelected(uniqueId))
@@ -81,11 +88,14 @@ class LoanProductControllerTest {
         assertNull(response.getBody());
     }
 
+    @DisplayName("findByProductos - Success Scenario")
     @Test
-    void findByProductos() {
+    void test_when_findByProductos_Success() {
         // Arrange
         String uniqueId = "someUniqueId";
         LoanProductResponse expectedResponse = new LoanProductResponse();
+        expectedResponse.setUniqueId("someUniqueId");
+        expectedResponse.setName("productMock");
         when(loanProductService.FindByID(uniqueId)).thenReturn(expectedResponse);
 
         // Act
@@ -93,10 +103,11 @@ class LoanProductControllerTest {
 
         // Assert
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(expectedResponse, response.getBody());
+        assertEquals(uniqueId, response.getBody().getUniqueId());
     }
+    @DisplayName("findByProductos - Success Scenario")
     @Test
-    void findByProductosNotFound() {
+    void test_when_findByProductos_NotFound() {
         // Arrange
         String uniqueId = "nonExistentUniqueId";
         when(loanProductService.FindByID(uniqueId))

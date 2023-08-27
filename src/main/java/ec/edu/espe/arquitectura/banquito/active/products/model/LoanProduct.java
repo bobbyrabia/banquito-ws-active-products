@@ -11,6 +11,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
+import java.util.Date;
 import java.util.List;
 
 @Setter 
@@ -24,8 +25,8 @@ public class LoanProduct {
     private String uniqueId;
     private List<ProductArrearsSetting> productArrearsSettings;
     private LoanRequirement loanRequirement;
-    private Long creationDate;
-    private Long lastModifiedDate;
+    private Date creationDate;
+    private Date lastModifiedDate;
     private BigDecimal cappingPercentage;
     private String cappingMethod;
     private String interestType;
