@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 s - in ec.edu.espe.arquitectura.banquito.active.products.service.LoanProductServiceTest
