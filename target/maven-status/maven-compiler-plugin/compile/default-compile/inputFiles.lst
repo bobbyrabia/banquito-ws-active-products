@@ -1,15 +1,15 @@
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductRequest.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Application.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductResponse.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\ProductArrearsSettingDto.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\LoanProduct.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\utils\MapperConfig.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\controller\LoanProductController.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\converts\Converters.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\LoanRequirement.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\config\CorsConfig.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\ProductArrearsSetting.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\service\LoanProductService.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductSelectResponse.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanRequirementsDto.java
-C:\ARQUITECTURA\DEFINITIVE\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\repository\LoanProductRepository.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductRequest.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductResponse.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\repository\LoanProductRepository.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\ProductArrearsSettingDto.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\utils\MapperConfig.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\converts\Converters.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Application.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\ProductArrearsSetting.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanRequirementsDto.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanProductSelectResponse.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\controller\LoanProductController.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\LoanProduct.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\config\CorsConfig.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\model\LoanRequirement.java
+E:\SEMESTRE 23-23\ARQUITECTURA\Arquitectura Final\Backend\banquito-ws-active-products\src\main\java\ec\edu\espe\arquitectura\banquito\active\products\service\LoanProductService.java
