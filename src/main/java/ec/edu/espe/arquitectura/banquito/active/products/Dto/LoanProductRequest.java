@@ -14,8 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 public class LoanProductRequest {
     private String uniqueId;
-    private List<ProductArrearsSetting> productArrearsSettings;
-    private LoanRequirement loanRequirement;
+    private ProductArrearsSetting productArrearsSettings;
+
+    private List<LoanRequirement> loanRequirement;
     private Long creationDate;
     private Long lastModifiedDate;
     private BigDecimal cappingPercentage;

@@ -23,8 +23,8 @@ public class LoanProduct {
     private String id;
     @Indexed(unique = true)
     private String uniqueId;
-    private List<ProductArrearsSetting> productArrearsSettings;
-    private LoanRequirement loanRequirement;
+    private ProductArrearsSetting productArrearsSettings;
+    private List<LoanRequirement> loanRequirement;
     private Date creationDate;
     private Date lastModifiedDate;
     private BigDecimal cappingPercentage;
