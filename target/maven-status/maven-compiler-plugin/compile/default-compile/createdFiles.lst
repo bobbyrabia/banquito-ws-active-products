@@ -12,8 +12,8 @@ ec\edu\espe\arquitectura\banquito\active\products\converts\Converters$2.class
 ec\edu\espe\arquitectura\banquito\active\products\Dto\LoanRequirementsDto.class
 ec\edu\espe\arquitectura\banquito\active\products\Dto\ProductArrearsSettingDto.class
 ec\edu\espe\arquitectura\banquito\active\products\Application.class
+ec\edu\espe\arquitectura\banquito\active\products\config\Cors$1.class
 ec\edu\espe\arquitectura\banquito\active\products\model\ProductArrearsSetting.class
-ec\edu\espe\arquitectura\banquito\active\products\config\CorsConfig$1.class
 ec\edu\espe\arquitectura\banquito\active\products\service\LoanProductService.class
-ec\edu\espe\arquitectura\banquito\active\products\config\CorsConfig.class
 ec\edu\espe\arquitectura\banquito\active\products\model\LoanRequirement.class
+ec\edu\espe\arquitectura\banquito\active\products\config\Cors.class

@@ -14,7 +14,6 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequestMapping("/api/v1/loanProduct")
-@CrossOrigin({"*"})
 public class LoanProductController {
     private final LoanProductService service;
 
